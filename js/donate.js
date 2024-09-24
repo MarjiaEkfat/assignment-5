@@ -12,7 +12,7 @@ document.getElementById('noakhali-btn').addEventListener('click', function (even
     return;
   }
   else {
-    alert('Congratulation! "You have Donated for Humankind" ')
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('noakhali-bdt').innerText = newAmount;
   document.getElementById('main-balance').innerText = newbalance;
   }
@@ -44,7 +44,7 @@ document.getElementById('feni-btn').addEventListener('click', function (event) {
     return;
   }
   else {
-    alert('Congratulation! "You have Donated for Humankind" ')
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('feni-bdt').innerText = newAmount;
     document.getElementById('main-balance').innerText = newbalance;
   }
@@ -73,7 +73,7 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     return;
   }
   else {
-    alert('Congratulation! "You have Donated for Humankind" ')
+    document.getElementById('my_modal_5').showModal();
     document.getElementById('quota-bdt').innerText = newAmount;
     document.getElementById('main-balance').innerText = newbalance;
   }
