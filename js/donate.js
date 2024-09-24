@@ -17,12 +17,12 @@ document.getElementById('noakhali-btn').addEventListener('click', function (even
   document.getElementById('main-balance').innerText = newbalance;
   }
 
-
+  const currentDate = new Date();
  const div = document.createElement('div');
-            div.classList.add('border-2', 'border-solid', 'p-2', 'mt-2');
+            div.classList.add('border-2', 'border-solid', 'p-2', 'mt-2','p-5','rounded-lg');
             div.innerHTML = `
             <h4 class="font-bold text-xl"> ${donate} Taka is Donated for famine-2024 at Noakhali, Bangladesh </h4>
-            <p id="dateTime"></p>
+            <p>Date : ${currentDate}</p>
             `;
             document.getElementById('history-container').appendChild(div);
 
@@ -48,12 +48,12 @@ document.getElementById('feni-btn').addEventListener('click', function (event) {
     document.getElementById('feni-bdt').innerText = newAmount;
     document.getElementById('main-balance').innerText = newbalance;
   }
-
+  const currentDate = new Date();
   const div = document.createElement('div');
             div.classList.add('border-2', 'border-solid', 'p-2', 'mt-2');
             div.innerHTML = `
             <h4 class="font-bold text-xl"> ${donate} Taka is Donated for Flood Relief in Feni,Bangladesh, Bangladesh </h4>
-            <p id="dateTime"></p>
+            <p>Date : ${currentDate}</p>
 
             `;
 
@@ -77,11 +77,12 @@ document.getElementById('quota-btn').addEventListener('click',function(event){
     document.getElementById('quota-bdt').innerText = newAmount;
     document.getElementById('main-balance').innerText = newbalance;
   }
-
+  const currentDate = new Date();
   const div = document.createElement('div');
             div.classList.add('border-2', 'border-solid', 'p-2', 'mt-2');
             div.innerHTML = `
             <h4 class="font-bold text-xl"> ${donate} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh </h4>
+            <p>Date : ${currentDate}</p>
             `;
             document.getElementById('history-container').appendChild(div);
 })
