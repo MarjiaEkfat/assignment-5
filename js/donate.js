@@ -97,6 +97,6 @@ document.getElementById('histiry-btn').addEventListener('click', function () {
 document.getElementById('blog-btn').addEventListener('click', function (event) {
   event.preventDefault();
 
-  window.location.href = '/blog.html';
+  window.location.href = 'https://marjiaekfat.github.io/assignment-5/blog.html';
 })
         
